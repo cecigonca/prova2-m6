@@ -45,7 +45,7 @@ def aplicar_haar(pasta_frames, pasta_rostos):
     print("Detecção completa!")
 
 pasta_frames = "frames-og"
-pasta_rostos = "frames_haar"
+pasta_rostos = "frames-haar"
 
 aplicar_haar(pasta_frames, pasta_rostos)
 
