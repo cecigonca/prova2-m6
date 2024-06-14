@@ -1,6 +1,30 @@
 # Parte Prática - Prova 2 (Módulo 6)
 
 ## Prova de Conceito
+### Instruções para execução
+#### Clone o Repositório
+Coloque esse comando no terminal
+
+```git clone https://github.com/cecigonca/prova2-m6.git```
+
+#### Ative o Ambiente Virtual (terminal Windows)
+Navegue até o diretorio
+
+```/../prova2-m6/```
+
+Rode os comandos seguintes
+
+```python -m venv venv```
+
+```./venv/Scripts/activate```
+
+#### Instale as dependências
+```python -m pip install -r requirements.txt```
+
+#### Executar
+No diretorio ```/../prova2-m6/```
+
+Rode o seguinte comando ```python prova.py```
 
 
 ## Perguntas Técnicas
@@ -31,6 +55,7 @@ Justificativa: Por assumirem uma relação linear entre as entradas e saídas, n
 Justificativa: Esse tipo de abordagem é focado em características simples, dificultando a detecção de expressões faciais.
 
 ### 2.4
+- 
 
 ### 2.5
 Vini Jr
