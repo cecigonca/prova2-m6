@@ -48,3 +48,23 @@ pasta_frames = "frames-og"
 pasta_rostos = "frames_haar"
 
 aplicar_haar(pasta_frames, pasta_rostos)
+
+def frames_video(pasta_rostos, video_haar, fps=30):
+    frames = [os.path.join(pasta_rostos, f) for f in sorted(os.listdir(pasta_rostos)) if f.endswith('.jpg')]
+
+    frame = cv2.imread(frames[0])
+    altura, largura, _ = frame.shape
+
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    video_writer = cv2.VideoWriter(video_haar, fourcc, fps, (largura, altura))
+
+    for frame_path in frames:
+        frame = cv2.imread(frame_path)
+        video_writer.write(frame)
+
+    video_writer.release()
+    print(f"Vídeo compilado com sucesso!")
+
+video_haar = "video/video_haar.mp4"
+
+frames_video(pasta_rostos, video_haar)
